@@ -1,4 +1,4 @@
-# webex-recap-sync
+# update-meeting-transcripts
 
 Automate keeping a Confluence page up-to-date with Webex meeting recap links.
 
@@ -54,10 +54,10 @@ You need OAuth credentials for a Webex Integration with the right scopes. This i
 ### 2. Install the scripts
 
 ```sh
-git clone https://github.com/jortessl/webex-recap-sync.git
+git clone https://github.com/jortessl/update-meeting-transcripts.git
 mkdir -p ~/scripts
-cp webex-recap-sync/webex_recap_auth.py ~/scripts/
-cp webex-recap-sync/webex_recap_sync.py ~/scripts/
+cp update-meeting-transcripts/webex_recap_auth.py ~/scripts/
+cp update-meeting-transcripts/webex_recap_sync.py ~/scripts/
 chmod +x ~/scripts/webex_recap_*.py
 ```
 
@@ -67,7 +67,7 @@ chmod +x ~/scripts/webex_recap_*.py
 
 ```sh
 mkdir -p ~/.webex-recap-fetcher
-cp webex-recap-sync/config.example.json ~/.webex-recap-fetcher/config.json
+cp update-meeting-transcripts/config.example.json ~/.webex-recap-fetcher/config.json
 chmod 600 ~/.webex-recap-fetcher/config.json
 # Now edit ~/.webex-recap-fetcher/config.json and paste your Client ID + Secret.
 ```
@@ -114,7 +114,7 @@ The `skill/update-meeting-transcripts/SKILL.md` file registers a `/update-meetin
 
 ```sh
 mkdir -p ~/.claude/skills/update-meeting-transcripts
-cp webex-recap-sync/skill/update-meeting-transcripts/SKILL.md ~/.claude/skills/update-meeting-transcripts/
+cp update-meeting-transcripts/skill/update-meeting-transcripts/SKILL.md ~/.claude/skills/update-meeting-transcripts/
 ```
 
 Then edit the copy in `~/.claude/skills/update-meeting-transcripts/SKILL.md` to bake in *your* default `--match` and `--page-id`.

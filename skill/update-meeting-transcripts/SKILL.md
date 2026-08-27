@@ -48,7 +48,7 @@ python3 $HOME/scripts/webex_recap_sync.py \
 - `python3 $HOME/scripts/webex_recap_auth.py login` has been run at least once (tokens stored in macOS Keychain under service `webex-recap-fetcher`)
 - `confluence` CLI configured (uses `~/.confluence-cli/config.json`)
 
-See the repo README for full setup: https://github.com/jortessl/webex-recap-sync
+See the repo README for full setup: https://github.com/jortessl/update-meeting-transcripts
 
 ## Failure modes
 
